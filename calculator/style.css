@@ -1,0 +1,73 @@
+.main {
+    background-color: #7cdffd;
+    padding: 15px;
+    margin: 0 auto;
+    width: 90%;
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+.text {
+    color: black;
+    font-weight: bold;
+}
+
+.preAns{
+    text-align: left;
+    opacity: 0.5;
+}
+.currentAns{
+    text-align: left;
+}
+
+.elements{
+    text-align: left;
+    font: bold 25px Arial, sans-serif;
+    margin: 10px;
+    padding: 1%;
+    background:  transparent;
+    color: #b709fc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.elements:focus{
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+
+.conteinerButton{
+    text-align: center;
+}
+.button{
+    cursor: crosshair;
+}
+.button:hover{
+    opacity: 0.5;
+}
+
+.conteinerExample{
+    text-align: center;
+}
+.conteinerAnswer{
+    text-align: center;
+    padding: 10px; /* Уменьшил отступы */
+    margin: 10px auto;
+}
+
+@media (max-width: 600px) {
+    .elements {
+        font-size: 18px; /* Уменьшаем размер шрифта */
+    }
+    .button {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+    .conteinerExample, .conteinerAnswer {
+        margin: 10px;
+    }
+    .main {
+        width: 100%;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Калькулятор</title>
+        <link rel="stylesheet" href="style.css" class="style">
+        <script defer src="calc.js"></script>
+    </head>
+    <body>
+        <div class="main">
+            <div class="conteinerExample">
+                <input class="elements" id="first_num" type="number">
+
+                <select class="elements" id="operator">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                    <option value="%">%</option>
+                    <option value="^">^</option>
+                </select>
+            
+                <input class="elements" id="second_num" type="number">
+            </div>
+            <div class="conteinerButton">
+                <button class="elements button" id="learnAnswer">подсчитать</button>
+            </div>
+
+            <div class="conteinerAnswer elements">
+                <p class="preAns"></p>
+                <p class="currentAns"></p>
+            </div>
+
+        </div>
+        <div class="setting">
+            <ul>
+                <li>
+                    <p class="text" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Backgroud color-picker
+                        <input id="settingBackgroundColor" type="color">
+                    </p>
+                </li>
+                
+                <li>
+                    <p class="text" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Font color-picker
+                        <input id="settingFrontColor" type="color">
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </body>
+
+</html>
